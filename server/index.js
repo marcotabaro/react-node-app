@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-//If React make a GET call, we return a string
+//If user make a GET call to API, we return a string
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!"});
 });
