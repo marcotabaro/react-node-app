@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './img/logo.svg';
+import boringLogo from './img/boringLogo.png';
 import './App.css';
 
 function App() {
@@ -12,12 +12,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Don't get bored while you wait..." : data}</p>
-      </header>
-    </div>
+    <wrapper>
+      <div className="App">
+        <header className="App-header">
+          <img src={boringLogo} className="App-logo" alt="logo" />
+          <p>{!data ? "Don't get bored while you wait..." : data}</p>
+        </header>
+      </div>
+    </wrapper>
   );
 }
 
