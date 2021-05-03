@@ -1,7 +1,8 @@
-const path = require('path');
+const path = require('path'); //provides utilities for working with file and directory paths
+
 const express = require("express");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;//default = 3000
 
 const app = express();
 
